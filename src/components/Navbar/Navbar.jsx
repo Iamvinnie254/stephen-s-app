@@ -69,7 +69,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle Button */}
           <button
-            className="lg:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 focus:outline-none"
+            className="lg:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 focus:outline-none cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -99,10 +99,10 @@ const Navbar = () => {
           } shadow-lg lg:hidden`}
         >
           {/* Close 'X' Button */}
-          <div className="flex justify-end p-4">
+          <div className="flex justify-end p-4 ">
             <button
               onClick={() => setMenuOpen(false)}
-              className="text-gray-600 dark:text-gray-300 hover:text-red-500"
+              className="text-gray-600 dark:text-gray-300 hover:text-red-500 cursor-pointer"
               aria-label="Close menu"
             >
               <svg
