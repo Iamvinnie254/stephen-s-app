@@ -49,7 +49,7 @@ const Navbar = () => {
                 <NavLink
                   to={path}
                   className={({ isActive }) =>
-                    isActive ? "text-indigo-600" : "hover:text-indigo-600"
+                    isActive ? "text-indigo-800" : "hover:text-indigo-800"
                   }
                 >
                   {
