@@ -3,12 +3,14 @@ import Hero from "../components/Hero/Hero";
 import HeroPhoto from "../assets/photo.jpg";
 import AboutIntro from "../components/About/About";
 import Skill from "../components/Skill/Skill";
+import Portfolio from "../components/Portfolio/Portfolio";
 const Home = () => {
   return (
     <div>
       <div className="">
         <AboutIntro />
         <Skill />
+        <Portfolio /> 
         <div className="relative h-[400px]">
           <img
             src={HeroPhoto}

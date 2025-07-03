@@ -1,15 +1,12 @@
 import React from "react";
-import python from '../../assets/Logos/python.png';
-import javascript from '../../assets/Logos/javascript.png';
-import react from '../../assets/Logos/react.png';
-import django from '../../assets/Logos/django.png';
-import vue from '../../assets/Logos/vue.png';
-import mysql from '../../assets/Logos/mysql.png';
-import tailwind from '../../assets/Logos/tailwind.png';
-import html from '../../assets/Logos/html.png';
-
-
-
+import python from "../../assets/Logos/python.png";
+import javascript from "../../assets/Logos/javascript.png";
+import react from "../../assets/Logos/react.png";
+import django from "../../assets/Logos/django.png";
+import vue from "../../assets/Logos/vue.png";
+import mysql from "../../assets/Logos/mysql.png";
+import tailwind from "../../assets/Logos/tailwind.png";
+import html from "../../assets/Logos/html.png";
 
 const Skill = () => {
   return (

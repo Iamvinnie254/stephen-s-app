@@ -14,7 +14,11 @@ const AboutIntro = () => {
             <span className="pr-2 md:text-2xl sm:text-2xl text-xl">A</span>
             <ReactTyped
               className="md:text-2xl sm:text-2xl text-xl text-emerald-700 font-light "
-              strings={["Software Engineer", "Web Developer", "Fullstack Developer"]}
+              strings={[
+                "Software Engineer",
+                "Web Developer",
+                "Fullstack Developer",
+              ]}
               typeSpeed={100}
               typespeed={20}
               backDelay={2000}
@@ -26,11 +30,11 @@ const AboutIntro = () => {
             I don’t just build websites — I craft digital experiences that solve
             real-world problems. From dynamic e-commerce platforms and
             interactive UIs to data-driven dashboards and sleek backend systems,
-            I bring ideas to life with React, Django, PostgreSQL, and a touch of
+            I bring ideas to life with a range of powerful languages such as Javascript, and a touch of
             creativity.
           </p>
           <p>
-            Whether it's designing sllek websites with Vue.js & React Js,
+            Whether it's designing sleek websites with Vue.js & React Js,
             analyzing systems with precision, or optimizing user experiences
             with clean, responsive code — I code with intent, learn with
             passion, and deploy with purpose.

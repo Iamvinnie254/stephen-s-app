@@ -94,7 +94,7 @@ const Navbar = () => {
         {/* Mobile Nav Panel */}
         <div
           ref={menuRef}
-          className={`fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-900 z-40 transform transition-transform duration-300 ease-in-out ${
+          className={`fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-800 z-40 transform transition-transform duration-300 ease-in-out ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } shadow-lg lg:hidden`}
         >
@@ -149,7 +149,7 @@ const Navbar = () => {
         {/* Overlay */}
         {menuOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-30 z-30 lg:hidden"
+            className="fixed inset-0 bg-gray-800/80 bg-opacity-70 z-30 lg:hidden"
             onClick={() => setMenuOpen(false)}
           ></div>
         )}
