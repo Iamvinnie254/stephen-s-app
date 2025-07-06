@@ -10,11 +10,11 @@ import html from "../../assets/Logos/html.png";
 
 const Skill = () => {
   return (
-    <div>
+    <div data-aos='fade-out'>
       <div className="md:flex md:flex-row flex flex-col-reverse gap-3 justify-between items-center max-w-screen-xl  px-5 py-8 md:mx-auto mx-3 ">
         <div className="w-full pt-7">
           <h2 className="text-emerald-700 font-semibold md:text-xl">Skills</h2>
-          <h1 className="text-2xl font-bold pt-2"> What I can can do</h1>
+          <h1 className="text-2xl font-bold pt-2"> What I can do</h1>
         </div>
       </div>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-3 justify-between items-center max-w-screen-xl  px-5 py-3 md:mx-auto mx-3  ">

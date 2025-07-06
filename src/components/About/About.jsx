@@ -6,11 +6,11 @@ const AboutIntro = () => {
   return (
     <div className="md:h-[300px] h-auto">
       <div className="md:flex md:flex-row flex flex-col-reverse gap-3 justify-between items-center max-w-screen-xl  px-5 py-8 md:mx-auto mx-3 ">
-        <div className="">
+        <div className="" data-aos='fade-in'>
           <h1 className="md:text-2xl pt-2 font-semibold">
             Hi, I'm Stephen Vincent
           </h1>
-          <h2 className="md:text-lg  pt-2 font-extralight gap-3">
+          <h2 className="md:text-lg  pt-2 font-extralight gap-3" >
             <span className="pr-2 md:text-2xl sm:text-2xl text-xl">A</span>
             <ReactTyped
               className="md:text-2xl sm:text-2xl text-xl text-emerald-700 font-light "
@@ -26,7 +26,7 @@ const AboutIntro = () => {
               loop
             />
           </h2>
-          <p className="pt-2  text-justify md:leading-8 leading-6">
+          <p className="pt-2  text-justify md:leading-8 leading-6" >
             I don’t just build websites — I craft digital experiences that solve
             real-world problems. From dynamic e-commerce platforms and
             interactive UIs to data-driven dashboards and sleek backend systems,
