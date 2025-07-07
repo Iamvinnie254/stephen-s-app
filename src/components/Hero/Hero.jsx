@@ -16,6 +16,7 @@ const Hero = () => {
             <Link to="/contact">
               <button
                 type="button"
+                onClick={window.scrollTo(0, 0)}
                 className="bg-emerald-800 p-2 md:p-4 md:text-lg text-gray-100 hover:bg-emerald-900 hover:text-white transition-all ease-in-out duration-300 rounded-full cursor-pointer"
               >
                 Talk to me
@@ -24,6 +25,7 @@ const Hero = () => {
             <Link to="/portfolio">
               <button
                 type="button"
+                onClick={window.scrollTo(0, 0)}
                 className="bg-emerald-800 p-2 md:p-4 md:text-lg text-gray-100 hover:bg-emerald-900 hover:text-white transition-all ease-in-out duration-300 rounded-full cursor-pointer "
               >
                 My Portfolio

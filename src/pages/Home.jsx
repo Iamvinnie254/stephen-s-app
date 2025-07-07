@@ -7,7 +7,7 @@ import Portfolio from "../components/Portfolio/Portfolio";
 const Home = () => {
   return (
     <div>
-      <div className="dark:bg-gray-300">
+      <div className="">
         <AboutIntro />
         <Skill />
         <Portfolio /> 
