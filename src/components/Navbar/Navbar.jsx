@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className="bg-white border-b border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-2">
+          <NavLink to="/" className="flex items-center gap-2" onClick={window.scrollTo(0,0)}>
             <img
               src={Photo}
               className="h-9 w-9 rounded-full object-cover"

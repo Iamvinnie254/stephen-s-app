@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Error404 = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-emerald-950 text-gray-200 px-4">
+    <div className="flex items-center justify-center min-h-screen bg-emerald-100 text-gray-600 px-4">
       <div className="text-center space-y-6">
         <h1 className="text-7xl font-extrabold text-indigo-400 drop-shadow-md">
           404
@@ -16,6 +16,7 @@ const Error404 = () => {
         </p>
         <Link
           to="/"
+          onClick={window.scrollTo(0,0)}
           className="inline-block mt-4 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-medium rounded-full transition duration-300 ease-in-out"
         >
           ← Go Back Home
