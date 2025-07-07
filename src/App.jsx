@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Error404 from "./pages/Error404";
+import ProjectDetail from "./components/Portfolio/ProjectDetail";
 
 function App() {
   //aos animation configuration
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="*" element={<Error404 />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
