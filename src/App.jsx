@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Error404 from "./pages/Error404";
-import ProjectDetail from "./components/Portfolio/ProjectDetail";
 import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog"
 import Services from "./pages/Services";
@@ -30,8 +29,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="*" element={<Error404 />} />
-          <Route path="/projects/:id" element={<ProjectDetail />} />
-          <Route path="/portfolio" element={ <Portfolio/>} />
+        <Route path="/portfolio" element={ <Portfolio/>} />
           <Route path="/blog" element={ <Blog/>} />
           <Route path="/services" element={ <Services/>} />
           <Route path="/contact" element={ <Contact/>} />

@@ -132,7 +132,7 @@ const Blog = () => {
                 {article.markdown}
               </ReactMarkdown>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-4 ">
                 {article.tags.map((tag, i) => (
                   <span
                     key={i}
