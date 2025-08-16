@@ -33,11 +33,11 @@ const services = [
   },
 ];
 
-const Services = () => {
+const Main = () => {
   return (
-    <div className="bg-white py-16 px-4 md:px-12 lg:px-20 min-h-[70vh]">
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="font-bold text-2xl md:text-3xl text-emerald-700">
+    <div className="bg-white py-16 px-4 md:px-12 lg:px-20">
+      <div className="text-center max-w-3xl mx-auto mb-12" data-aos="flip-down">
+        <h2 className="font-bold font-serif text-2xl md:text-3xl text-emerald-700">
           My Services
         </h2>
         <h1 className="font-semibold text-gray-700 pt-2 text-lg md:text-xl">
@@ -55,6 +55,7 @@ const Services = () => {
           <div
             key={index}
             className="bg-gray-50 rounded-2xl p-6 text-center shadow-md hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+            data-aos="zoom-in"
           >
             <span className="flex justify-center"> {service.icon}</span>
             <h3 className="font-semibold text-lg text-gray-800 mb-2">
@@ -68,4 +69,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Main;
