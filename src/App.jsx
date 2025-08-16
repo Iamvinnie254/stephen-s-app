@@ -6,10 +6,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Error404 from "./pages/Error404";
 import Portfolio from "./pages/Portfolio";
-import Blog from "./pages/Blog"
+import Blog from "./pages/Blog";
 import Services from "./pages/Services";
-import Contact from "./pages/Contact"
-import Resume from "./pages/Resume"
+import Contact from "./pages/Contact";
 
 function App() {
   //aos animation configuration
@@ -29,11 +28,10 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="*" element={<Error404 />} />
-        <Route path="/portfolio" element={ <Portfolio/>} />
-          <Route path="/blog" element={ <Blog/>} />
-          <Route path="/services" element={ <Services/>} />
-          <Route path="/contact" element={ <Contact/>} />
-          <Route path="/resume" element={ <Resume/>} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>

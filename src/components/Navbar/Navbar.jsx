@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import Photo from "../../assets/photo.jpg";
+import Photo from "../../assets/Hero/Hero.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,10 +21,14 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50">
-      <nav className="bg-white border-b border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+      <nav className="bg-white border-none  px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-2" onClick={window.scrollTo(0,0)}>
+          <NavLink
+            to="/"
+            className="flex items-center gap-2"
+            onClick={window.scrollTo(0, 0)}
+          >
             <img
               src={Photo}
               className="h-9 w-9 rounded-full object-cover"
@@ -37,34 +41,24 @@ const Navbar = () => {
 
           {/* Desktop Nav */}
           <ul className="hidden lg:flex space-x-6 text-gray-800 dark:text-gray-200 font-medium">
-            {[
-              "/",
-              "/portfolio",
-              "/services",
-              "/blog",
-              "/resume",
-              "/contact",
-            ].map((path, i) => (
-              <li key={i}>
-                <NavLink
-                  to={path}
-                  className={({ isActive }) =>
-                    isActive ? "text-indigo-800" : "hover:text-indigo-800"
-                  }
-                >
-                  {
-                    [
-                      "Home",
-                      "Portfolio",
-                      "Services",
-                      "Blogs",
-                      "Resume",
-                      "Talk To Me",
-                    ][i]
-                  }
-                </NavLink>
-              </li>
-            ))}
+            {["/", "/portfolio", "/services", "/blog", "/contact"].map(
+              (path, i) => (
+                <li key={i}>
+                  <NavLink
+                    to={path}
+                    className={({ isActive }) =>
+                      isActive ? "text-indigo-800" : "hover:text-indigo-800"
+                    }
+                  >
+                    {
+                      ["Home", "Portfolio", "Services", "Blogs", "Talk To Me"][
+                        i
+                      ]
+                    }
+                  </NavLink>
+                </li>
+              )
+            )}
           </ul>
 
           {/* Mobile Menu Toggle Button */}
@@ -99,7 +93,7 @@ const Navbar = () => {
           } shadow-lg lg:hidden`}
         >
           {/* Close 'X' Button */}
-          <div className="flex justify-end p-4 ">
+          <div className="flex justify-end p-4 pr-15 z-50">
             <button
               onClick={() => setMenuOpen(false)}
               className="text-gray-600 dark:text-gray-300 hover:text-red-500 cursor-pointer"
@@ -128,7 +122,7 @@ const Navbar = () => {
               { path: "/portfolio", label: "Portfolio" },
               { path: "/services", label: "Services" },
               { path: "/blog", label: "Blogs" },
-              { path: "/resume", label: "Resume" },
+
               { path: "/contact", label: "Talk To Me" },
             ].map(({ path, label }) => (
               <li key={path}>

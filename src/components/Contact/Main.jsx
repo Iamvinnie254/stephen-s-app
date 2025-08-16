@@ -2,7 +2,7 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="">
+    <div className="" data-aos='zoom-in'>
       <div className="pt-7">
         <h2 className="text-center text-emerald-700 font-bold text-xl md:text-2xl">
           Having an idea in mind?
@@ -51,7 +51,7 @@ const Main = () => {
               </label>
               <textarea
                 id="message"
-                rows="6"
+                rows="10"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
                 placeholder="Share your idea/thought..."
               ></textarea>

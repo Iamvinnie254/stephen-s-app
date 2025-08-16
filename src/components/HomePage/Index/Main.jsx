@@ -17,7 +17,22 @@ import {
   Smartphone,
   Coffee,
 } from "lucide-react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import {
+    FaCss3Alt,
+    FaDatabase,
+  FaGithub,
+  FaHtml5,
+  FaJs,
+  FaJsSquare,
+  FaLaravel,
+  FaLinkedin,
+  FaPhp,
+  FaProjectDiagram,
+  FaPython,
+  FaReact,
+  FaVuejs,
+  FaWhatsapp,
+} from "react-icons/fa";
 import HeroImage from "../../../assets/Hero/Hero.png";
 
 const Main = () => {
@@ -33,16 +48,20 @@ const Main = () => {
   ];
 
   const skills = [
-    { name: "JavaScript", icon: "⚡", color: "from-yellow-400 to-yellow-600" },
-    { name: "React.js", icon: "⚛", color: "from-blue-400 to-blue-600" },
-    { name: "Vue.js", icon: "💚", color: "from-green-400 to-green-600" },
-    { name: "PHP", icon: "🐘", color: "from-purple-400 to-purple-600" },
-    { name: "Laravel", icon: "🏗", color: "from-red-400 to-red-600" },
-    { name: "Python", icon: "🐍", color: "from-blue-500 to-green-500" },
-    { name: "Django", icon: "🎯", color: "from-green-500 to-teal-500" },
-    { name: "MySQL", icon: "🗄", color: "from-orange-400 to-orange-600" },
-    { name: "Tailwind CSS", icon: "🎨", color: "from-cyan-400 to-cyan-600" },
-    { name: "HTML5", icon: "📄", color: "from-orange-500 to-red-500" },
+    {
+      name: "JavaScript",
+      icon: <FaJsSquare />,
+      color: "from-yellow-400 to-yellow-600",
+    },
+    { name: "React.js", icon: <FaReact />, color: "from-blue-400 to-blue-600" },
+    { name: "Vue.js", icon: <FaVuejs/>, color: "from-green-400 to-green-600" },
+    { name: "PHP", icon:<FaPhp/>, color: "from-purple-400 to-purple-600" },
+    { name: "Laravel", icon: <FaLaravel/>, color: "from-red-400 to-red-600" },
+    { name: "Python", icon: <FaPython/>, color: "from-blue-500 to-green-500" },
+    { name: "Django", icon: <FaPython/>, color: "from-green-500 to-teal-500" },
+    { name: "MySQL", icon: <FaDatabase/>, color: "from-orange-400 to-orange-600" },
+    { name: "Tailwind CSS", icon: <FaCss3Alt/>, color: "from-cyan-400 to-cyan-600" },
+    { name: "HTML5", icon: <FaHtml5/>, color: "from-orange-500 to-red-500" },
   ];
 
   const features = [
@@ -250,13 +269,19 @@ const Main = () => {
       >
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2
+              className="text-4xl md:text-5xl font-bold text-white mb-6"
+              data-aos="fade-out"
+            >
               About{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                 Me
               </span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p
+              className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+              data-aos="zoom-in"
+            >
               I'm a passionate fullstack developer with a love for creating
               innovative solutions. With expertise across the entire development
               stack, I turn complex problems into elegant, user-friendly
@@ -268,9 +293,10 @@ const Main = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group p-6 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300 transform hover:-translate-y-2"
+                className="group p-6 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 transition-transform duration-300 ease-in-out transform cursor-pointer hover:-translate-y-1"
+                data-aos="zoom-up"
               >
-                <div className="text-cyan-400 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-cyan-400 mb-4 group-hover:scale-110  transition-transform duration-300 ease-in-out">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">
@@ -291,7 +317,7 @@ const Main = () => {
         className="py-20 bg-gradient-to-b from-gray-900 to-slate-900"
       >
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16" data-aos="zoom-out">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               My{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
@@ -309,9 +335,10 @@ const Main = () => {
               <div
                 key={index}
                 className="group relative p-6 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:border-cyan-400/50 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+                data-aos="zoom-in"
               >
                 <div className="text-center">
-                  <div className="text-4xl mb-3 group-hover:scale-125 transition-transform duration-300">
+                  <div className="text-4xl mb-3 group-hover:scale-125 flex justify-center transition-transform duration-300">
                     {skill.icon}
                   </div>
                   <h3 className="text-white font-semibold group-hover:text-cyan-400 transition-colors">
@@ -341,7 +368,7 @@ const Main = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+        <div className="max-w-4xl mx-auto px-4 text-center" data-aos="zoom-out">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Build Something{" "}
             <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
@@ -355,7 +382,7 @@ const Main = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
-              className="px-10 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-bold rounded-full hover:from-cyan-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300 shadow-2xl"
+              className="px-10 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-bold rounded-full hover:from-cyan-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300 shadow-2xl cursor-pointer"
               onClick={() =>
                 (window.location.href = "mailto:vincentstephen489@gmail.com")
               }
@@ -366,12 +393,14 @@ const Main = () => {
               </span>
             </button>
 
-            <button className="px-10 py-4 border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/10 hover:border-cyan-400 transition-all duration-300">
-              <span className="flex items-center justify-center">
-                <FaGithub className="w-5 h-5 mr-2" />
-                View My Work
-              </span>
-            </button>
+            <Link to='/portfolio'>
+              <button className="px-10 py-4 border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/10 hover:border-cyan-400 transition-all duration-300 cursor-pointer">
+                <span className="flex items-center justify-center">
+                  <FaProjectDiagram className="w-5 h-5 mr-2" />
+                  View My Work
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </section>

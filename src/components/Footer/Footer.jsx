@@ -15,16 +15,16 @@ const Footer = () => {
             <Link to={"https://github.com/Iamvinnie254"}>
               <FaGithub size={25} />
             </Link>
-            <Link to={"/"}>
+            <Link to={"https://linkedin.com/in/stephen-vincent/"}>
               <FaLinkedin size={25} />
             </Link>
             <Link to={"/"}>
               <FaXTwitter size={25} />
             </Link>
-            <Link to={"/"}>
+            <Link to={"https://wa.me/254702387039"}>
               <FaWhatsapp size={25} />
             </Link>
-            <Link to={"/"}>
+            <Link to={"https://wa.me/254702387039 "}>
               <FaPhoneAlt size={25} />
             </Link>
           </div>
@@ -41,24 +41,14 @@ const Footer = () => {
               {" "}
               Home
             </Link>
-            <Link
-              to={"/"}
-              className="hover:text-gray-500 transition-all duration-300"
-            >
-              About Me
-            </Link>
+            
             <Link
               to={"/services"}
               className="hover:text-gray-500 transition-all duration-300"
             >
               My Services
             </Link>
-            <Link
-              to={"/resume"}
-              className="hover:text-gray-500 transition-all duration-300"
-            >
-              Download Resume
-            </Link>
+            
             <Link
               to={"/contact"}
               className="hover:text-gray-500 transition-all duration-300"
@@ -74,7 +64,7 @@ const Footer = () => {
           <div className="flex flex-col pt-5 gap-4">
             <Link
               to={"/portfolio"}
-              onClick={window.scrollTo(0,0)}
+              onClick={window.scrollTo(0, 0)}
               className="hover:text-gray-500 transition-all duration-300"
             >
               E-Commerce Websites
