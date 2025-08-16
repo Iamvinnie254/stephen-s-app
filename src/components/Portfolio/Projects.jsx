@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExternalLink, Github, Calendar, Tag } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
   const projects = [
@@ -72,7 +73,7 @@ const Projects = () => {
   ];
 
   const ProjectCard = ({ project }) => (
-    <div className={`group relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden ${project.featured ? 'ring-2 ring-blue-500' : ''}`}>
+    <div className={`group relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden ${project.featured ? 'ring-2 ring-blue-500' : ''}`} data-aos='zoom-out'>
       {project.featured && (
         <div className="absolute top-4 left-4 z-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
           Featured
@@ -101,7 +102,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
           >
-            <Github size={16} className="text-gray-800" />
+            <FaGithub size={16} className="text-gray-800" />
           </a>
         </div>
       </div>
@@ -148,7 +149,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="flex items-center justify-center px-4 py-2 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:border-gray-900 hover:text-gray-900 transition-all duration-200"
           >
-            <Github size={16} />
+            <FaGithub size={16} />
           </a>
         </div>
       </div>
@@ -176,12 +177,12 @@ const Projects = () => {
 
         <div className="text-center mt-16">
           <a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/Iamvinnie254" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transform hover:scale-105 transition-all duration-200"
           >
-            <Github size={20} className="mr-2" />
+            <FaGithub size={20} className="mr-2" />
             View More on GitHub
           </a>
         </div>
