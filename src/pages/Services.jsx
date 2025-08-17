@@ -7,8 +7,7 @@ const Services = () => {
   return (
     <div>
       <ServicesPage />
-      <WorkPlan />
-      <Testimonials />
+      
     </div>
   );
 };

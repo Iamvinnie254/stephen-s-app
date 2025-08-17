@@ -18,7 +18,9 @@ const Footer = () => {
             <Link to={"https://linkedin.com/in/stephen-vincent/"}>
               <FaLinkedin size={25} />
             </Link>
-            <Link to={"/"}>
+            <Link
+              to={"https://x.com/Call_me_vinnie_?t=rk8Zw1RL6rU6dYPPppoS9g&s=09"}
+            >
               <FaXTwitter size={25} />
             </Link>
             <Link to={"https://wa.me/254702387039"}>
@@ -41,14 +43,14 @@ const Footer = () => {
               {" "}
               Home
             </Link>
-            
+
             <Link
               to={"/services"}
               className="hover:text-gray-500 transition-all duration-300"
             >
               My Services
             </Link>
-            
+
             <Link
               to={"/contact"}
               className="hover:text-gray-500 transition-all duration-300"
