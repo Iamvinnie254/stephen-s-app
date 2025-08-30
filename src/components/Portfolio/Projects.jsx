@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Kinyozi from "../../assets/projects/kinyozi.png"
 import {
   ExternalLink,
   Github,
@@ -96,6 +97,19 @@ const Projects = () => {
       githubUrl: "https://github.com/example",
       date: "2023",
       category: "backend",
+      featured: false,
+    },
+    {
+      id: 7,
+      title: "Premium Cuts Kenya",
+      description:
+        "A single page application for a kinyozi setup showcasing the works of our experienced barbers and the looks of the contemporary man in the modern day.",
+      image: Kinyozi,
+      technologies: ["Vue Js", "Tailwind CSS", "Netlify", "Github Actions"],
+      liveUrl: "https://premiumcutskenya.netlify.app/",
+      githubUrl: "https://github.com/example",
+      date: "2025",
+      category: "frontend",
       featured: false,
     },
   ];
@@ -250,7 +264,7 @@ const Projects = () => {
                 <button
                   key={category.value}
                   onClick={() => setFilter(category.value)}
-                  className={`flex items-center px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
+                  className={`flex items-center px-3 md:px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
                     filter === category.value
                       ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-lg"
                       : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white border border-white/20 hover:border-cyan-400/50 cursor-pointer"
