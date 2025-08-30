@@ -27,7 +27,7 @@ const Navbar = () => {
           <NavLink
             to="/"
             className="flex items-center gap-2"
-            onClick={window.scrollTo(0, 0)}
+            onClick={() => window.scrollTo(0, 0)}
           >
             <img
               src={Photo}
@@ -46,6 +46,7 @@ const Navbar = () => {
                 <li key={i}>
                   <NavLink
                     to={path}
+                    onClick={window.scrollTo(0, 0)}
                     className={({ isActive }) =>
                       isActive ? "text-indigo-800" : "hover:text-indigo-800"
                     }
