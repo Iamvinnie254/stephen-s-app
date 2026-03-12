@@ -4,14 +4,7 @@ import useScrollY from "../hooks/useScrollY";
 const Navbar = ({ dark, toggleDark }) => {
   const scrollY = useScrollY();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const links = [
-    "About",
-    "Skills",
-    "Experience",
-    "Projects",
-    "Blog",
-    "Contact",
-  ];
+  const links = ["About", "Skills", "Projects", "Contact"];
 
   const scrollTo = (id) => {
     document

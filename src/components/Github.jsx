@@ -55,8 +55,8 @@ const Github = () => {
                     />
                     {repo.lang}
                   </span>
-                  <span>⭐ {repo.stars}</span>
-                  <span>🍴 {repo.forks}</span>
+                  <span>Stars {repo.stars}</span>
+                  <span>Forks {repo.forks}</span>
                 </div>
               </div>
             </FadeIn>

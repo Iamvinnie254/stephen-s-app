@@ -9,7 +9,7 @@ const Footer = () => {
           SV<span className="text-indigo-400">.</span>
         </div>
         <p className="text-sm text-zinc-600 text-center">
-          © 2025 Stephen Vincent · Full Stack Software Engineer
+          © 2026 Stephen Vincent · Full Stack Software Engineer
         </p>
         <div className="flex gap-4">
           {[PROFILE.github, PROFILE.linkedin, PROFILE.twitter].map(
