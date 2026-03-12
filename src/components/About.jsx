@@ -4,6 +4,7 @@ import GradientText from "../ui/GradientText";
 import SectionLabel from "../ui/SectionLabel";
 import SectionTitle from "../ui/SectionTitle";
 import PROFILE from "../data/profile";
+import profile_photo from "../images/profile.png";
 
 const About = () => {
   return (
@@ -16,10 +17,11 @@ const About = () => {
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-3xl bg-gradient-to-br from-indigo-600/20 via-violet-600/20 to-cyan-600/20 border border-white/10 flex items-center justify-center text-8xl relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent" />
                 <div className="relative text-center">
-                  <div className="text-7xl mb-2">👨‍💻</div>
-                  <div className="text-sm text-zinc-400 font-medium">
-                    Full Stack Engineer
-                  </div>
+                  <img
+                    src={profile_photo}
+                    alt="Profile"
+                    className=""
+                  />
                 </div>
               </div>
 

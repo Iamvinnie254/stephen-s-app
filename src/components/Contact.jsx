@@ -15,10 +15,26 @@ const Contact = () => {
       return;
     }
     setStatus("sending");
+
+    const phonenumber = "254702387039";
+
+    const message = `
+    Hello, my name is ${form.name}.
+
+    Email:
+    ${form.email}
+
+    Message:
+    ${form.message}`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phonenumber}?text=${encodedMessage}`;
+
     setTimeout(() => {
+      window.open(whatsappURL, "_blank");
       setStatus("success");
       setForm({ name: "", email: "", message: "" });
-    }, 1200);
+    }, 500);
   };
 
   return (
@@ -60,13 +76,13 @@ const Contact = () => {
                 {
                   icon: "⬡",
                   label: "GitHub",
-                  value: "github.com/alexmorgan",
+                  value: "github.com/Iamvinnie254",
                   href: PROFILE.github,
                 },
                 {
                   icon: "in",
                   label: "LinkedIn",
-                  value: "linkedin.com/in/alexmorgan",
+                  value: "linkedin.com/in/stephen-vincent-9a74b83b6/",
                   href: PROFILE.linkedin,
                 },
               ].map((c) => (
@@ -92,7 +108,13 @@ const Contact = () => {
           </FadeIn>
 
           <FadeIn direction="left" delay={0.15}>
-            <div className="bg-white/3 border border-white/8 rounded-2xl p-8">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                handleSubmit();
+              }}
+              className="bg-white/3 border border-white/8 rounded-2xl p-8"
+            >
               <div className="space-y-4 mb-6">
                 {[
                   { key: "name", placeholder: "Your Name", type: "text" },
@@ -109,6 +131,7 @@ const Contact = () => {
                     className="w-full bg-white/5 border border-white/8 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-indigo-500/50 transition-colors"
                   />
                 ))}
+
                 <textarea
                   rows={5}
                   placeholder="Your message..."
@@ -121,7 +144,7 @@ const Contact = () => {
               </div>
 
               <button
-                onClick={handleSubmit}
+                type="submit"
                 disabled={status === "sending" || status === "success"}
                 className="w-full py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-white font-semibold text-sm transition-all hover:shadow-lg hover:shadow-indigo-500/25"
               >
@@ -137,12 +160,13 @@ const Contact = () => {
                   Please fill in all fields.
                 </p>
               )}
+
               {status === "success" && (
                 <p className="mt-3 text-xs text-emerald-400 text-center">
                   Thanks! I'll get back to you within 24 hours.
                 </p>
               )}
-            </div>
+            </form>
           </FadeIn>
         </div>
       </div>

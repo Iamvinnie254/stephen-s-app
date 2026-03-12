@@ -1,12 +1,78 @@
-# React + Vite
+# Stephen's portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- A carefully crafted personal portfolio website showcasing my software engineering skills by displaying some of the projects already shipped, the customer and industry professionals sentiments and also the techstack that I am proficient in.
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. React Js
+2. Tailwind CSS
 
-## Expanding the ESLint configuration
+## Tools
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Git and Github
+2. Netlify
+
+## Folder Structure
+
+```bash
+vinnie-portfolio1
+│
+├── node_modules
+├── public
+│
+├── src
+│   │
+│   ├── components
+│   │   ├── About.jsx
+│   │   ├── Blog.jsx
+│   │   ├── Contact.jsx
+│   │   ├── CTA.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Github.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Skills.jsx
+│   │   └── Testimonials.jsx
+│   │
+│   ├── data
+│   │   ├── blog.js
+│   │   ├── experience.js
+│   │   ├── github.js
+│   │   ├── profile.js
+│   │   ├── projects.js
+│   │   ├── skills.js
+│   │   └── testimonials.js
+│   │
+│   ├── hooks
+│   │   ├── useInView.js
+│   │   └── useScrollY.js
+│   │
+│   ├── pages
+│   │   ├── Home.jsx
+│   │   └── Layout.jsx
+│   │
+│   ├── ui
+│   │   ├── FadeIn.jsx
+│   │   ├── GradientText.jsx
+│   │   ├── SectionLabel.jsx
+│   │   └── SectionTitle.jsx
+│   │
+│   ├── utils
+│   │   ├── index.js
+│   │   └── micro-components.jsx
+│   │
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+
+ ```
