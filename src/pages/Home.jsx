@@ -1,12 +1,28 @@
-import React from "react";
-import HomePage from "../components/HomePage/Index/Main";
+import React from 'react'
+import Hero from '../components/Hero'
+import About from '../components/About'
+import Skills from '../components/Skills'
+import Experience from '../components/Experience'
+import Projects from '../components/Projects'
+import Github from '../components/Github'
+import Blog from '../components/Blog'
+import Testimonials from '../components/Testimonials'
+import Contact from '../components/Contact'
 
 const Home = () => {
   return (
-    <div>
-      <HomePage />
-    </div>
-  );
-};
+      <>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Github />
+          <Blog />
+          <Testimonials />
+          <Contact/>
+      </>
+  )
+}
 
-export default Home;
+export default Home

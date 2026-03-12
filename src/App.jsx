@@ -1,18 +1,12 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
-import Error404 from "./pages/Error404";
-import Portfolio from "./pages/Portfolio";
-import Blog from "./pages/Blog";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 
 function App() {
   //aos animation configuration
-
   React.useEffect(() => {
     AOS.init({
       offset: 100,
@@ -27,11 +21,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="*" element={<Error404 />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
